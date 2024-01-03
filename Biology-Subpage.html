@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+	<!-- Links -->
+<style>
+*{
+  font-family: 'Lora', cursive;
+  font-size: 14pt;
+}
+
+.ParallaxImage {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.bg3 {
+  background-image: url(bg1.png);
+  width: 100%;
+
+}
+
+.ParallaxContent {
+  background: none repeat scroll 0 0 rgba(15, 26, 34,0.5); ; 
+  padding: 42px 0;
+  align-items:center;
+} 
+.ParallaxContent h2{
+	color:#0F1A25;
+	align-items:center;
+}
+
+.ParallaxVideo{ 
+  height: 300px;
+  padding-bottom: 50px; 
+}
+
+.ParallaxVideo video{ 
+  min-width: 100%;
+  z-index: -1000;
+  margin-bottom: -10px;
+  margin-top: -50px;
+}        
+
+.ParallaxVideo h1 {
+  color: #0F1A25;
+  font-size: 76pt;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18pt;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+body {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px;
+}
+
+.container {
+  max-width: 1400px; 
+  padding: 15px;
+  color: white;
+}
+
+.col-sm-3 img {
+ display:flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+  background-color: #0F1A25;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; 
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 10pt;
+}
+a:hover, a:active {
+  color: #ffcc00;
+  font-weight: bold;
+        }
+
+.nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Lora', cursive;
+}
+        
+h3, h2 {
+  font-family: 'Lora', cursive;  
+  text-align: center;
+  background: transparent;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width:1600px) {
+  body {
+    background-size: 1850px 1750px;
+  }
+}
+
+.y img {
+  padding: 0px;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 18pt;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:775px) {
+  .header-links {
+    width: 80%;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  body {
+    background-size: 1850px 1750px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .header-links, .container, .col-sm-3 img {
+  width: 100%;
+  max-width: 200%;
+}
+ body {
+   background-position: -650px -0px;
+   background-size: 2500px 3300px;
+  }
+}
+
+video {
+width: 100%;
+height: auto;
+}
+
+.x video{
+  margin-top: 10px;
+}
+.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.2), 0 6px 20px 0 rgba(255,255,255, 0.19);
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  background-color: #141312;
+  font-size: 9pt;
+  font-family: 'Lora', cursive
+}
+
+h5 {
+  font-size: 14pt;
+  text-align:center;
+  font-weight: bold;
+}
+
+h4 {
+  text-align:center;
+  font-weight: bold;
+}
+
+.main li {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.main {
+  padding: 15px;
+  background-color: #2c2a2a;
+  box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  width:100%;
+  border-radius: 10px;
+ }
+</style>
+<body>
+<header>
+  <div class="row">
+    <div class="col-xl">
+    <img class="hogwarts-text-1" src="hogwartslogo.png" height="50" width="70" alt=""> 
+	<img class="hogwarts-text-2" src="hogwartstext-1.png" height="50" width="100" alt=""> <img class="hogwarts-text-2" src="hogwartstext-2.png" height="50" width="70" alt=""> <img class="hogwarts-text-2" src="hogwartstext-3.png" height="50" width="23" alt=""> <img class="hogwarts-text-2" src="hogwartstext-4.png" height="50" width="110" alt=""> <img class="hogwarts-text-2" src="hogwartstext-5.png" height="50" width="40" alt=""> <img class="hogwarts-text-2" src="hogwartstext-6.png" height="50" width="100" alt="">
+    </div>
+	</div>
+	
+    <nav class="header-links navbar-expand-sm">
+        <ul class="navbar-nav">
+        <li class="nav-item"><a href="Home.html">Home</a></li>
+        <li class="nav-item"><a href="About.html">About</a></li>
+        <li class="nav-item"><a href="Academics.html">Academics</a></li>
+        <li class="nav-item"><a href="Extra-Curriculars.html">Extra-Curriculars</a></li>
+        <li class="nav-item"><a href="Contacts.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="ParallaxImage bg1">
+<div class="ParallaxVideo">
+  <video loop autoplay muted>
+    <source src="bg1.mp4" type="video/mp4">
+	<source src="bg1.ogg" type="video/ogg">
+</video>
+
+
+<div class="ParallaxImage bg3">
+  <div class="container">
+
+<div class="main" style="margin-top:5%;margin-bottom:5%;padding:1px 16px;">
+
+
+<hr>
+<h3>AA1: Digestive System Simulation</h3>
+<hr>
+<h4>Introduction</h4>
+<hr>
+
+<div class="row">
+<div class="col-sm-6">
+<img src="StartingSetup1.jpg" alt="">
+<p>&nbsp;</p>
+</div>
+
+<div class="col-sm-6">
+<p>This laboratory page aims to enhance one's understanding of the digestive system, its function, and the processes involved in digestion. Understanding the digestive system is essential as it helps one better understand how one's body processes one's food which helps in maintaining good health and a balanced diet. It also provides a basis for understanding how various digestive illnesses and disorders are caused and how to prevent them. The simulation activity helps one understand the digestive system by helping one visualize how different organs function and what happens if a certain organ is removed. For instance, removing the gallbladder will cause the body to have difficulty digesting fats as it is the organ that stores bile, a fluid that aids in the digestion of fat, which means one should limit the consumption of fatty food. Simulation of the digestive system also helps one understand what would happen if the sequence of processes is altered and enables one to manipulate the model to understand the organ and its parts.</p>
+</div>
+</div>
+
+
+<div class="row">
+<hr>
+<h5>Section I: Stages of Food Processing</h5>
+<hr>
+<h5>Subsection: Crushing Stage</h5>
+<hr>
+
+
+<div class="row">
+<div class="col-sm-4">
+<div class="polaroid">
+<img src="FoodProcessing5.jpg" alt=""><br>
+<hr>
+<p>
+<strong>Q1: What is being simulated by putting bananas and crackers in the zip lock?</strong>
+</p>
+<hr>
+<p>
+When we put the bananas and crackers in the zip lock, the food we put in seems to represent our food bolus. Once it goes out of the esophagus, it will fall into the stomach to start the digestion stage.<br>
+<br>
+</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<img src="FoodProcessing1.jpg" alt=""><br>
+<hr>
+<p>
+<strong>Q2: What is being simulated by the addition of water?</strong>
+</p>
+<hr>
+<p>
+The water acts as the gastric juices that breaks down the food bolus. We started noticing this when the banana and crackers were becoming more mushier and easier to break apart when the water was poured in, like the hydrochloric acid in the stomach.<br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<img src="FoodProcessing4.jpg" alt=""><br>
+<hr>
+<p>
+<strong>Q3: What does the zip-locked bag represent?</strong>
+</p>
+<hr>
+<p>The zip-locked bag represents the stomach itself. We noticed this because of the banana, crackers, and water, which have similar functions to the stomach.<br>
+</p>
+<hr>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+<div class="polaroid">
+<img src="FoodProcessing2.jpg" alt=""><br>
+<hr>
+<p>
+<strong>Q4: What does crushing the food simulate?</strong>
+</p>
+<hr>
+<p>
+The crushing motion on the banana and crackers is like the stomach's churning motion, this is the part where the food bolus' proteins will be digested and turned into chyme.<br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<img src="FoodProcessing3.jpg" alt=""><br>
+<hr>
+<p>
+<strong>Q5: What is being simulated by the addition of orange juice?</strong>
+</p>
+<hr>
+<p>
+The addition of orange juice represents the gastric juices getting more concentrated to digest more easily.<br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<img src="Stomach%20Biomolecules.png" alt=""><br>
+<hr>
+<p>
+<strong>Q6: What do you think are the possible biomolecule components of the food inside?</strong>
+</p>
+<hr>
+<p>The biomolecule components inside the food could be digested carbohydrates like smaller polysaccharides and disaccharides, and protein being digested into small polypeptides due to pepsin in the stomach.<br>
+<br>
+</p>
+</div>
+</div>
+</div>
+
+<hr>
+<h6>Subsection: Transfer Stage</h6>      
+<hr>
+
+<div class="row">
+<div class="col-sm-3">
+<div class="polaroid">
+<img src="SimulatingWaterFiltering2.jpg" alt=""><br>
+<hr>
+<p><strong>Q7: What is being simulated by the liquid flowing out of the stocking?</strong><br></p> 
+<hr>
+<p>The liquid running out of the sock reflects nutrient absorption in the small intestine, which is represented by the sock. <br></p>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="polaroid">
+<img src="SimulatingWaterFiltering4.jpg" alt=""><br>
+<hr>
+<p><strong>Q8: What does the tray represent?</strong><br></p>
+<p>The tray depicts the bloodstream, which is where all of the liquid ends up.<br></p>
+<hr>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="polaroid">
+<img src="SimulatingWaterFiltering5.jpg" alt=""><br>
+<hr>
+<p><strong>Q9: What is left inside the stocking?</strong><br></p>
+<hr>
+<p>The solid substance is what is left inside the of the sock which represents feces, and the sock itself represents the large intestine. <br></p>
+<br>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="polaroid">
+<img src="SimulatingElimination7.jpg" alt=""><br>
+<hr>
+<p><strong>Q10: What is being simulated by pushing the partially solidified content?</strong><br></p>
+<hr>
+<p>The solid substance pushed out of the cup hole simulates feces exiting the digestive tract or elimination. <br></p>
+<br>
+</div>
+</div>
+</div>
+
+<div class="row">
+<hr>
+<h5>Section 2: Simulation of Absorption</h5>
+<hr>
+
+
+<img src="TissueOnWater1.jpg" alt=""><br>
+<p><strong>Q11: Which paper towel absorbed the largest amount of water? What could be the possible explanation?</strong><br>
+Of the four paper towels, the tissue with four folds absorbed the most, possibly because the folds gave it more surface area to absorb more. <br>
+<br>
+<strong>Q12: In which organ of the digestive system can you compare the paper towels? How does the structure of the organ help in its function?</strong><br>
+This experiment is comparable to the absorption process that happens in the small intestine. More specifically, the folded tissue is similar to the folded villi lining in the small intestine. Its folded structure helps in absorption just like how the folded tissue took up more water, because of its increased surface area.<br>
+<br>
+</p>
+<hr>
+</div>
+
+<div class="row">
+<hr>
+<h5>Section 3: Simulation of Bile Action</h5>
+<hr>
+
+<p>
+<strong>Q13: Explain the role of bile in digestion. Is it involved in chemical or mechanical digestion?</strong><br>
+After Jars A and B were shaken and observed, it showed that there are bubbles from the soap in Jar A and some of the oil from Jar B continued to cling to the wall of their respective containers. This is a representation of what bile does in the digestive process. Bile is a chemical produced by your liver and stored in the gallbladder, which when released breaks down fatty acids, hence functioning as a chemical digestive process.
+<br>
+<br>
+</p>
+<hr>
+</div>
+
+<hr>
+<h4>Conclusion and Reflection</h4>
+<hr>
+<p>As we conclude our experiment, we have learned lots of things from both studying and simulating the digestive system. With our knowledge from both the classroom and the lab, we have a great knowledge of when food is digested and how it's broken into small pieces and converted into stools. Now I know that when I eat food, there are very complex processes inside us that filter and convert food into glucose, amino acids, fatty acids, and more that give nutrients to the human body. Other than that, there are enzymes like pepsin that turn proteins into smaller particles that go into the small intestine which leads them to the anus. And when times comes, these small particles become stool ending the process. As we reflect on the digestive system, I realize that when we eat food, there are extraordinary processes inside our body that we don't think of all the time. But now with our great knowledge of things, we can appreciate how amazing these things are.</p>
+<hr>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
