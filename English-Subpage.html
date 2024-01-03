@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Sonnets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+	<!-- Links -->
+<style>
+*{
+  font-family: 'Lora', cursive;
+  font-size: 14pt;
+}
+
+.ParallaxImage {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.bg3 {
+  background-image: url(bg1.png);
+  width: 100%;
+}
+
+.ParallaxContent {
+  background: none repeat scroll 0 0 rgba(15, 26, 34,0.5); ; 
+  padding: 42px 0;
+  align-items:center;
+} 
+.ParallaxContent h2{
+	color:#0F1A25;
+	align-items:center;
+	
+}
+
+.ParallaxVideo{ 
+  height: 300px;
+  padding-bottom: 50px; 
+}
+
+.ParallaxVideo video{ 
+  min-width: 100%;
+  z-index: -1000;
+  margin-bottom: -10px;
+  margin-top: -50px;
+  
+}        
+
+.ParallaxVideo h1 {
+  color: #0F1A25;
+  font-size: 76pt;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18pt;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+body {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px;
+}
+
+.container {
+  max-width: 1400px; 
+  padding: 15px;
+  color: white;
+}
+
+.col-sm-3 img {
+ display:flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+  background-color: #0F1A25;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; 
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 10pt;
+}
+a:hover, a:active {
+  color: #ffcc00;
+  font-weight: bold;
+        }
+
+.nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Lora', cursive;
+}
+        
+h3, h2 {
+  font-family: 'Lora', cursive;
+  
+  text-align: center;
+  background: transparent;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width:1600px) {
+  body {
+    background-size: 1850px 1750px;
+  }
+}
+
+.y img {
+  padding: 0px;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 18pt;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:775px) {
+  .header-links {
+    width: 80%;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+  }
+  body {
+    background-size: 1850px 1750px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .header-links, .container, .col-sm-3 img {
+  width: 100%;
+  max-width: 200%;
+}
+ body {
+   background-position: -650px -0px;
+   background-size: 2500px 3300px;
+  }
+}
+
+video {
+width: 100%;
+height: auto;
+}
+
+.x video{
+  margin-top: 10px;
+}
+.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.2), 0 6px 20px 0 rgba(255,255,255, 0.19);
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 9pt;
+  font-family: 'Lora', cursive;
+  background-image: url(paper.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+h5 {
+  font-size: 14pt;
+  text-align:center;
+}
+
+h4 {
+  text-align:center;
+  font-weight: bold;
+}
+
+.main li {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.main {
+  padding: 15px;
+  background-color: #141312;
+  box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  width:100%;
+  border-radius: 10px;
+ }
+ 
+p {
+ font-size: 10pt;
+}
+ 
+</style>
+<body>
+<header>
+  <div class="row">
+    <div class="col-xl">
+    <img class="hogwarts-text-1" src="hogwartslogo.png" height="50" width="70" alt=""> 
+	<img class="hogwarts-text-2" src="hogwartstext-1.png" height="50" width="100" alt=""> <img class="hogwarts-text-2" src="hogwartstext-2.png" height="50" width="70" alt=""> <img class="hogwarts-text-2" src="hogwartstext-3.png" height="50" width="23" alt=""> <img class="hogwarts-text-2" src="hogwartstext-4.png" height="50" width="110" alt=""> <img class="hogwarts-text-2" src="hogwartstext-5.png" height="50" width="40" alt=""> <img class="hogwarts-text-2" src="hogwartstext-6.png" height="50" width="100" alt="">
+    </div>
+	</div>
+	
+    <nav class="header-links navbar-expand-sm">
+        <ul class="navbar-nav">
+        <li class="nav-item"><a href="Home.html">Home</a></li>
+        <li class="nav-item"><a href="About.html">About</a></li>
+        <li class="nav-item"><a href="Academics.html">Academics</a></li>
+        <li class="nav-item"><a href="Extra-Curriculars.html">Extra-Curriculars</a></li>
+        <li class="nav-item"><a href="Contacts.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="ParallaxImage bg1">
+<div class="ParallaxVideo">
+  <video loop autoplay muted>
+    <source src="bg1.mp4" type="video/mp4">
+	<source src="bg1.ogg" type="video/ogg">
+</video>
+
+
+<div class="ParallaxImage bg3">
+  <div class="container">
+
+<div class="main" style="margin-top:5%;margin-bottom:5%;padding:1px 16px;">
+<div class="row">
+
+<hr>
+<h4>"Tears on Paper, Echoes of Sorrow"</h4>
+<hr>
+<p>Have you ever felt like you've hit rock bottom in life? The kind of moment where everything seems dark and hopeless. It's a difficult place to be in, no doubt. But did you know that writing sonnets can be a great way to express those emotions in words? Our group wrote our own sonnets about various similar experiences, and our goal is to capture the different forms of sadness one feels during those tough times. 
+<br>
+By reflecting on various experiences and putting them into words, one is able to release repressed emotions and find a sense of calm and peace. It's like turning pain into something beautiful. 
+<br>
+Expressing emotions through sonnets is a creative way to deal with sadness and move towards healing. The sonnets capture the different forms of sadness and help in reflecting on past events that trouble us. Writing about sad experiences allows for the release of repressed emotions in a calm and meditative way, leading to gradual recovery and moving on.
+<br>
+So, if you're going through a tough time, remember that you have the power to overcome it. Take some time to write down your feelings in a sonnet. This might even become a new, helpful hobby to help you get through rough times without the unnecessary drama.
+</p>
+<hr>
+<h4>Petrarchan Sonnets</h4>
+<hr>
+
+
+<div class="col-sm-4">
+<div class="polaroid">
+<hr>
+<h4>"Boys In The Backstreet: Alone and Lonely"</h4>
+<hr>
+<h5>By: Tristan Catap</h5>
+<hr>
+<p>
+In kingdoms where music shows its strong spell <br>
+A song awaken, its name Incomplete <br>
+My sad emotions on this vocal swell <br>
+Each piece longs love's burning feat <br>
+A deep desire rises, passionate in scope, <br>
+of this awful tune, in the shadows pressed <br>
+A plea that echoes through love's passionate slope <br>
+Fill my spaces with hope, heartfully expressed <br>
+In these verses sonnet's intertwine, <br>
+Incomplete tales find solace in the rhyme, <br>
+with hope, the spaces devoid and align <br>
+A taste of love that stands time. <br>
+let the song play, my voice be heard  <br>
+Fill my spaces , but by hope conferred.  <br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<hr>
+<h4>"My Broken Self in a Perfect World"</h4>
+<hr>
+<h5>By: Joshua Chua</h5>
+<hr>
+<p>
+In a world without fault, what is my purpose as someone flawed? <br>
+Am I nothing but a hindrance while my gentle soul rotted away? <br>
+As if all my past mistakes have led me astray  <br>
+And shattered my wings as if it's getting clawed. <br>
+The ideal me, now small fragments of feelings thats sawed  <br>
+I had a good life, yet my hands chased hard dreams and didnt stay. <br>
+If only I knew my chances of achieving then are quite gray. <br>
+And now, I must endure everything I started, with hope outlawed. <br>
+But in these moments of gloom, I can also think of improvements.  <br>
+I may have lots of flaws but I'm not full of them.     <br>
+I can still save myself from becoming forever gloomy.  <br>
+My whole life I've kept myself in a cage of concealments,   <br>
+But when I accept my mistakes and who I am      <br>
+I can escape my cage and find my perfect wings to fly freely.   <br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<hr>
+<h4>"Heaven's Darling"</h4>
+<hr>
+<h5>By: Andrea Martinez</h5>
+<hr>
+<p>Sealed the final chapter of life’s beautiful memories with you <br> 
+Recollections of a life’s beloved years <br>
+Father had always told me to hold back from my sorrowful tears <br>
+Yet Mother, each blink brings a tear, as sorrow flows through <br>
+Shattered to pieces, I lay here weeping in sorrow, yet I knew <br>
+A life lived with passion, is a life that endears <br>
+A broken heart was once a heart that felt love through the years <br>
+I wish to see the world through your eyes,  from your rose-colored view <br>
+
+A darling from the heavens, in the shape of my mother <br>
+When I was at my lowest, you raised me high <br>
+You saw the individual who I grew to be, with a pure heart and mind <br>
+Spread your wings and take flight, as I know you like no other <br>
+“Hallelujah”, He said as He took you back to His kingdom in the sky <br>
+“You’ve arrived”
+<hr>
+</div>
+</div>
+
+<hr>
+<h4>Shakespearean Sonnets</h4>
+<hr>
+
+
+<div class="col-sm-4">
+<div class="polaroid">
+<hr>
+<h4>"Fill My Spaces with Hope"</h4>
+<hr>
+<h5>By: Tristan Catap</h5>
+<hr>
+<p>
+In kingdoms where music shows its strong spell<br>
+A song awaken, its name Incomplete <br>
+My sad emotions on this vocal swell<br>
+Each piece longs love's burning feat<br>
+<br>
+A deep desire rises, passionate in scope,<br>
+of this awful tune, in the shadows pressed<br>
+A plea that echoes through love's passionate slope<br>
+Fill my spaces with hope, heartfully expressed <br>
+<br>
+In these verses sonnet’s intertwine,<br>
+Incomplete tales find solace in the rhyme,<br>
+with hope, the spaces devoid and align<br>
+A taste of love that stands time.<br>
+<br>
+let the song play, my voice be heard<br>
+Fill my spaces , but by hope conferred.<br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<hr>
+<h4>"Emptiness Without Them"</h4>
+<hr>
+<h5>By: Joshua Chua</h5>
+<hr>
+<p>
+My feelings are bleak, with thoughts never-ending. <br>
+It's just not the same without them with me. <br>
+A day of joy becomes one of lamenting, <br>
+The death of memories we all share with glee. <br>
+Replaying old thoughts so I can rewind, <br>
+to times I didn't despise myself so often. <br>
+The only thing keeping me together was them by my side. <br>
+Oh, what can I do to stop being so solemn? <br>
+And how do I express my sorrow, <br>
+when I don't let myself speak and instead sink? <br>
+Maybe saying what our stuttering voices felt, concisely and slow  <br>
+Will lead to the past of no worries we'd all like to think.  <br>
+And we can carry on all our dreams, <br>
+Without worry and gloom by any means. <br>
+</p>
+<hr>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="polaroid">
+<hr>
+<h4>"Love, Loss, and Remembrance"</h4>
+<hr>
+<h5>By: Andrea Martinez</h5>
+<hr>
+<p>
+On Sundays, I lay in melancholic slumber, under the sky's tender <br>
+It seems as though I had entombed my faith with you<br>
+I cry to the Divine, uncertain of my faith, as I beg in complete surrender<br>
+As I’m at a loss of what more I can do<br>
+I’m still clinging to memories of what is no longer there, refusing to let go<br>
+I can't bear to bid farewell, as this goodbye is for eternity<br>
+Six feet between us has never felt impossibly distant, yet you're now a star aglow<br>
+Amidst the starry skies and fading embers, I find myself alone in solitude and uncertainty<br>
+The pain is overwhelming, for reasons too many to tell<br>
+You've captured my essence and the very core of who I am too.<br>
+Left me with mere remnants, and the rest in pieces fell.<br>
+In nostalgic moments spent with you,<br>
+A 20-dollar bill in the box, its value grew<br>
+Even if left penniless with just 20, at least it’d remind me of you…<br>
+<p>
+<hr>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
